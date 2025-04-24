@@ -1,0 +1,1 @@
+/home/rachit/Documents/DePIN\ energy\ trading\ app/App/contracts/energytrade/target/sbf-solana-solana/release/libenergytrade.rlib: /home/rachit/Documents/DePIN\ energy\ trading\ app/App/contracts/energytrade/programs/energytrade/src/lib.rs
