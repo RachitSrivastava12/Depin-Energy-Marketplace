@@ -1,1 +1,3 @@
-console.log("Hello via Bun!");
+import prisma from "@repo/db";
+
+const data = prisma.user.create
