@@ -27,6 +27,9 @@ out/
 build
 dist
 
+# contracts/energytrade/programs/energytrade/target
+**/target/
+
 
 # Debug
 npm-debug.log*
