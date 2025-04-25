@@ -18,9 +18,9 @@ userRoute.post('/connect-wallet', async (req: Request, res: Response) => {
 
     try {
         isValidWalletAddress = new PublicKey(walletAddress);
-        
+
     } catch (error) {
-        res.json({ message: "Not a valid wallet address" })
+        res.status(400).json({ message: "Not a valid wallet address" })
     }
 
     try {
@@ -39,9 +39,11 @@ userRoute.post('/connect-wallet', async (req: Request, res: Response) => {
                         airdropGiven: true
                     }
                 })
+
+                // Call contract airdrop
             }
 
-            res.status(200).send({ json: { message: "Wallet connected", user } })
+            res.status(200).json({ json: { message: "Wallet connected", user } })
         }
     } catch (error) {
         console.error(error);
